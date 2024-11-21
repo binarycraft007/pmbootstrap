@@ -5,7 +5,7 @@
 
 pkgname=pmbootstrap
 pkgver=2.3.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Sophisticated chroot/build/flash tool to develop and install postmarketOS'
 url='https://gitlab.postmarketos.org/postmarketOS/pmbootstrap'
 arch=('any')
