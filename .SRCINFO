@@ -9,6 +9,7 @@ pkgbase = pmbootstrap
 	makedepends = python-installer
 	makedepends = python-setuptools
 	makedepends = python-wheel
+	depends = git
 	depends = python
 	depends = python-argcomplete
 	source = https://gitlab.postmarketos.org/postmarketOS/pmbootstrap/-/archive/2.3.3/pmbootstrap-2.3.3.tar.gz

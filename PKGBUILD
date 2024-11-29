@@ -11,6 +11,7 @@ url='https://gitlab.postmarketos.org/postmarketOS/pmbootstrap'
 arch=('any')
 license=('GPL-3.0-only')
 depends=(
+  'git'
   'python'
   'python-argcomplete'
 )
