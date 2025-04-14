@@ -1,0 +1,24 @@
+From f4c2d4c558e337e63a1b11a2d98cec8753443c0e Mon Sep 17 00:00:00 2001
+From: elliot <elliot.huang.signed@gmail.com>
+Date: Sun, 13 Apr 2025 21:37:55 +0800
+Subject: [PATCH] Patch to support custom repo
+
+---
+ pmb/config/__init__.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/pmb/config/__init__.py b/pmb/config/__init__.py
+index 6aaf8db0..c7452348 100644
+--- a/pmb/config/__init__.py
++++ b/pmb/config/__init__.py
+@@ -578,8 +578,8 @@ def sudo(cmd: Sequence[PathString]) -> Sequence[PathString]:
+         "git@gitlab.alpinelinux.org:alpine/aports.git",
+     ],
+     "pmaports": [
+-        "https://gitlab.postmarketos.org/postmarketOS/pmaports.git",
+-        "git@gitlab.postmarketos.org:postmarketOS/pmaports.git",
++        "https://github.com/pinnacles-le-1-2/pmaports.git",
++        "git@github.com:pinnacles-le-1-2/pmaports.git",
+     ],
+ }
+ 
