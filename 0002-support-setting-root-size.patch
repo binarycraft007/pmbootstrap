@@ -1,19 +1,8 @@
 diff --git a/pmb/install/_install.py b/pmb/install/_install.py
-index 1921c520..f49917d3 100644
+index 1921c520..5cbea7b4 100644
 --- a/pmb/install/_install.py
 +++ b/pmb/install/_install.py
-@@ -135,6 +135,10 @@ def copy_files_from_chroot(args: PmbArgs, chroot: Chroot) -> None:
-     if os.path.exists(fifo):
-         pmb.helpers.run.root(["rm", fifo])
- 
-+    boot = chroot / "boot"
-+    if os.path.exists(boot):
-+        pmb.helpers.run.root(["rm", "-rf", boot])
-+
-     # Get all folders inside the device rootfs (except for home)
-     folders: list[str] = []
-     for path in mountpoint_outside.glob("*"):
-@@ -927,6 +931,7 @@ def install_system_image(
+@@ -927,6 +927,7 @@ def install_system_image(
          )
      else:
          layout = None

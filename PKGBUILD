@@ -20,7 +20,7 @@ source=(
 md5sums=(
 	'SKIP'
 	'eb2a7654675533414791057dbabf57ec'
-	'de92450f2d87bc74a89fdb26ee3942f7'
+	'ea6c46f81eea86a45007870ed9df7d1f'
 )
 
 pkgver() {
