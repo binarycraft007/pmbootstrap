@@ -15,10 +15,12 @@ conflicts=("${pkgname%-git}")
 source=(
 	'git+https://gitlab.postmarketos.org/postmarketOS/pmbootstrap.git'
 	'0001-support-custom-repo.patch'
+	'0002-support-setting-root-size.patch'
 )
 md5sums=(
 	'SKIP'
 	'eb2a7654675533414791057dbabf57ec'
+	'de92450f2d87bc74a89fdb26ee3942f7'
 )
 
 pkgver() {
@@ -27,7 +29,9 @@ pkgver() {
 }
 
 prepare() {
-	patch -d "${pkgname%-git}" -Np1 -i ../0001-support-custom-repo.patch
+	for patch in ../000*.patch; do
+		patch -d "${pkgname%-git}" -Np1 -i "$patch"
+	done
 }
 
 build() {
